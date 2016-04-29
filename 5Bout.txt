@@ -1,0 +1,10 @@
+
+
+The sequence of courses to take before 12 is :
+5
+6
+7
+0
+1
+
+in that order.

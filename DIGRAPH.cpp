@@ -3,8 +3,8 @@
 UNIT NAME : DiGraph.cpp
 PURPOSE   : Directed Graph / Adjacency Matrix Implementation
 WRITTEN FOR : Data Structures
-WRITTEN BY : Scott Schumacher
-DATE : 18 April 16
+WRITTEN BY : 
+DATE : 
 ---------------------------------------------------------------------------*/
 #include "digraph.H"
 #include <iostream>
@@ -16,7 +16,7 @@ DiGraph::DiGraph (int n)
 // PostCondition : Graph Graph is created and has n vertices and no edges
 // Error Condition : Error if n < 0 or n >+ MaxVertices
 {
-	adjList = new SortedList[n];
+	 
 } //DiGraph
 
 DiGraph::DiGraph(DiGraph & other)
@@ -26,8 +26,6 @@ DiGraph::DiGraph(DiGraph & other)
 {
 	
 }
-
-
 
 
 DiGraph::~DiGraph ()
@@ -55,8 +53,8 @@ void DiGraph::AddEdge (int X, int Y)
 //                  a vertex in Graph or if X and Y are not distinct or if
 //                  edge (X,Y) is already in Graph
 {
-	adjList[X].insertitem(Y);
-}  // AddEdge
+	
+}  // Remove Edge
 
 
 bool DiGraph::IsEdge (int X, int Y ) const
@@ -65,7 +63,7 @@ bool DiGraph::IsEdge (int X, int Y ) const
 // ErrorCondition : X or Y is not a vertex in Graph
 {
 	 
-	return false;
+
 } //IsEdge
 
 int DiGraph::GetNumberOfVertices ( ) const
@@ -74,7 +72,7 @@ int DiGraph::GetNumberOfVertices ( ) const
 //                 vertices in Graph
 // ErrorCondition : none
 {
-	return 0;
+	
 }    // GetNumberOfVertices
 
 
